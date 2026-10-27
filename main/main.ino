@@ -70,3 +70,17 @@ void loop() {
     myDigitalWrite(7, 0);
     delay(500);
 }
+
+
+
+// Arduino Uno (ATmega328P):
+// D0-D7  -> PORTD, bit 0-7
+// D8-D13 -> PORTB, bit 0-5
+//
+// DDRx: 1 = OUTPUT, 0 = INPUT
+// PORTx (OUTPUT): 1 = HIGH, 0 = LOW
+// PORTx (INPUT): 1 = pull-up enabled, 0 = pull-up disabled
+//
+// Arduino pin number != AVR port bit number.
+// Example: Arduino D8 -> PORTB bit 0
+// Example: Arduino D13 -> PORTB bit 5
